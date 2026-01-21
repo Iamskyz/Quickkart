@@ -34,8 +34,10 @@ const Footer = () => {
           <FooterListTitle title=" More about Quickkart Shop" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
-              ab ullam, numquam nesciunt in.
+              Quickkart Shop is your one-stop online destination for a diverse
+              range of products, from electronics to fashion. We are committed to
+              providing exceptional customer service and a seamless shopping
+              experience.
             </p>
             <ul className="flex items-center gap-2">
               <a
@@ -117,7 +119,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-2 flex flex-col items-center w-full px-4">
+        {/* <div className="col-span-2 flex flex-col items-center w-full px-4">
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
             <p className="text-center mb-4">
@@ -164,7 +166,7 @@ const Footer = () => {
               imgSrc={paymentCard}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
