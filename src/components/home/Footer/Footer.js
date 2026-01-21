@@ -1,32 +1,33 @@
-import React, { useState } from "react";
+// import React , { useState } from "react";
 // import { motion } from "framer-motion";
-import {FaYoutube, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaYoutube, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
 // import { paymentCard } from "../../../assets/images";
 // import Image from "../../designLayouts/Image";
 
 const Footer = () => {
-  const [emailInfo, setEmailInfo] = useState("");
+  // const [emailInfo, setEmailInfo] = useState("");
   // const [subscription, setSubscription] = useState(false);
   // const [errMsg, setErrMsg] = useState("");
 
-  const emailValidation = () => {
-    return String(emailInfo)
-      .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
+  // const emailValidation = () => {
+  //   return String(emailInfo)
+  //     .toLocaleLowerCase()
+  //     .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  // };
 
-  const handleSubscription = () => {
-    if (emailInfo === "") {
-    //   setErrMsg("Please provide an Email !");
-    // } else if (!emailValidation(emailInfo)) {
-    //   setErrMsg("Please give a valid Email!");
-    // } else {
-    //   setSubscription(true);
-    //   setErrMsg("");
-    //   setEmailInfo("");
-    }
-  };
+  // const handleSubscription = () => {
+  //   if (emailInfo === "") {
+  //     setErrMsg("Please provide an Email !");
+  //   } else if (!emailValidation(emailInfo)) {
+  //     setErrMsg("Please give a valid Email!");
+  //   } else {
+  //     setSubscription(true);
+  //     setErrMsg("");
+  //     setEmailInfo("");
+  //   }
+  // };
+
   return (
     <div className="w-full bg-[#F5F5F3] py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
@@ -119,12 +120,16 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+        
+        
         {/* <div className="col-span-2 flex flex-col items-center w-full px-4">
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
             <p className="text-center mb-4">
               A at pellentesque et mattis porta enim elementum.
             </p>
+
             {subscription ? (
               <motion.p
                 initial={{ x: 20, opacity: 0 }}
@@ -150,6 +155,7 @@ const Footer = () => {
                     </p>
                   )}
                 </div>
+
                 <button
                   onClick={handleSubscription}
                   className="bg-white text-lightText w-[30%] h-10 hover:bg-black hover:text-white duration-300 text-base tracking-wide"
@@ -167,6 +173,8 @@ const Footer = () => {
             />
           </div>
         </div> */}
+       
+
       </div>
     </div>
   );
