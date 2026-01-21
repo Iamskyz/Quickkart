@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import {FaYoutube, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
-import { paymentCard } from "../../../assets/images";
-import Image from "../../designLayouts/Image";
+// import { paymentCard } from "../../../assets/images";
+// import Image from "../../designLayouts/Image";
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
-  const [subscription, setSubscription] = useState(false);
-  const [errMsg, setErrMsg] = useState("");
+  // const [subscription, setSubscription] = useState(false);
+  // const [errMsg, setErrMsg] = useState("");
 
   const emailValidation = () => {
     return String(emailInfo)
@@ -18,13 +18,13 @@ const Footer = () => {
 
   const handleSubscription = () => {
     if (emailInfo === "") {
-      setErrMsg("Please provide an Email !");
-    } else if (!emailValidation(emailInfo)) {
-      setErrMsg("Please give a valid Email!");
-    } else {
-      setSubscription(true);
-      setErrMsg("");
-      setEmailInfo("");
+    //   setErrMsg("Please provide an Email !");
+    // } else if (!emailValidation(emailInfo)) {
+    //   setErrMsg("Please give a valid Email!");
+    // } else {
+    //   setSubscription(true);
+    //   setErrMsg("");
+    //   setEmailInfo("");
     }
   };
   return (
